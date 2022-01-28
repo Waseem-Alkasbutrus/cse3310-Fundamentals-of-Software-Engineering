@@ -16,17 +16,17 @@ bin/Assignment1Test.class:src/Assignment1Test.java ./bin/poker/Hand.class
                  -cp ${CLASS_PATH}:jars/junit-platform-console-standalone-1.8.2.jar \
                  ./src/Assignment1Test.java
 
-bin/poker/Hand.class:src/Hand.java ./bin/poker/Card.class
+bin/poker/Hand.class:src/poker/Hand.java ./bin/poker/Card.class
 	$(shell mkdir -p bin)
 	${JAVAC} -d bin \
                  -cp ${CLASS_PATH} \
-                 ./src/Hand.java
+                 ./src/poker/Hand.java
 
-bin/poker/Card.class:src/Card.java
+bin/poker/Card.class:src/poker/Card.java
 	$(shell mkdir -p bin)
 	${JAVAC} -d bin \
                  -cp ${CLASS_PATH} \
-                 ./src/Card.java
+                 ./src/poker/Card.java
 
 bin/log4j2.xml:src/log4j2.xml
 	cp src/log4j2.xml bin/log4j2.xml

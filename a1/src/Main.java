@@ -1,21 +1,21 @@
 import com.google.gson.Gson; 
 import com.google.gson.GsonBuilder; 
 import poker.Hand;
+import poker.Card.Suite;
+import poker.Card.Value;
 import poker.Card;
 
 
-public class Main 
-{
+public class Main {
 
-  public static void main(String[] args) 
-  {
+  public static void main(String[] args) {
      // this function is provided as a convenient way to
      // run the code from the command line.
      //
      // it will not be graded, but it needs to compile and
      // execute without a failure.
 
-     System.out.println("Start");
+     System.out.println("==================================\nStart");
 
      // Demonstrate converting json in and out of a 'Hand'
      //
@@ -46,7 +46,7 @@ public class Main
 
      // and back into a "hand"
      Hand H3 = new Hand();
-     H3 = gson.fromJson(jsonString,Hand.class);
+     H3 = gson.fromJson(jsonString, Hand.class);
 
      // change something
      H3.cards[4].suite = Card.Suite.valueOf("DIAMONDS");
@@ -59,18 +59,14 @@ public class Main
      Hand H2 = new Hand();
      H2 = H1;
 
-
-     if (H1.is_better_than(H2)) 
-     {
+     if (H1.is_better_than(H2)) {
         System.out.println("hand1 is better than hand2");
      }
 
-     if (H2.is_better_than(H1))
-     {
+     if (H2.is_better_than(H1)) {
         System.out.println("hand2 is better than hand1");
      }
-     System.out.println("End");
 
+     System.out.println("End\n==================================");
   }
-
 }
