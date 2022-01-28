@@ -19,10 +19,16 @@ public class Hand {
             throw new Exception("There must be 5 cards in a hand (provided " + cards.length + " cards)");
         }
 
-        this.cards = cards.clone();
+        
     }
 
     public boolean is_better_than(Hand H) {
         return false;
     }
+
+
+   public boolean is_equal(Hand H)
+   {
+       return false;
+   }
 }
