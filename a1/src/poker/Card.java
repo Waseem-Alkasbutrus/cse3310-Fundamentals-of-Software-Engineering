@@ -4,11 +4,11 @@ public class Card implements Comparable<Card> {
    public enum Suite {
       HEARTS, CLUBS, DIAMONDS, SPADES
    }
-   
+
    public enum Value {
-      TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE 
+      TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE
    }
-   
+
    public Suite suite;
    public Value value;
 
@@ -18,6 +18,10 @@ public class Card implements Comparable<Card> {
    public Card(Value value, Suite suite) {
       this.value = value;
       this.suite = suite;
+   }
+
+   public Card duplicate() {
+      return new Card(this.value, this.suite);
    }
 
    @Override
