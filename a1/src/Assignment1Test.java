@@ -1,7 +1,6 @@
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,11 +17,11 @@ class Assignment1Test {
     private final String three_5s = "{'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}";
 
     private static final Logger LOGGER = LogManager.getLogger(Assignment1Test.class);
-    
+
     @Test
     void four_of_a_kind_better_then_3_of_a_kind() {
-        // Use the logger to see what is happening 
-        // with a test when it fails.  it is writen
+        // Use the logger to see what is happening
+        // with a test when it fails. it is writen
         // to a log file.
 
         LOGGER.debug(" in the 4 of a kind test");
@@ -34,10 +33,11 @@ class Assignment1Test {
         H1 = gson.fromJson(four_5s, Hand.class);
 
         Hand H2 = new Hand();
-        H2 = gson.fromJson(three_5s,Hand.class);
+        H2 = gson.fromJson(three_5s, Hand.class);
 
         // Now test it
-        //assertTrue(H1.is_better_than(H2)); uncomment when the is_better_than function is working !
+        // assertTrue(H1.is_better_than(H2)); uncomment when the is_better_than function
+        // is working !
         assertTrue(!H2.is_better_than(H1));
     }
 
@@ -47,8 +47,5 @@ class Assignment1Test {
 
     @Test
     void royalFlushBetterThanAny() {
-        Hand H1 = new Hand();
-        Hand H2 = new Hand();
-        assertTrue(!H1.is_better_than(H2));
     }
 }

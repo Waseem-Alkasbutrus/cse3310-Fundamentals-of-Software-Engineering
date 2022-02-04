@@ -2,3 +2,579 @@
 20:45:47.453 [main] DEBUG Assignment1Test -  in the 4 of a kind test
 14:16:58.777 [main] DEBUG Assignment1Test -  in the 4 of a kind test
 16:30:35.714 [main] DEBUG Assignment1Test -  in the 4 of a kind test
+18:24:04.724 [main] DEBUG Assignment1Test -  in the 4 of a kind test
+18:24:23.845 [main] DEBUG Assignment1Test -  in the 4 of a kind test
+18:26:57.493 [main] DEBUG Assignment1Test -  in the 4 of a kind test
+18:28:01.660 [main] DEBUG Assignment1Test -  in the 4 of a kind test
+18:30:25.939 [main] DEBUG Assignment1Test -  in the 4 of a kind test
+18:39:37.656 [main] DEBUG Assignment1Test -  in the 4 of a kind test
+18:39:39.407 [main] DEBUG GradingTest - Test Each Type of Hand against each other
+18:39:39.411 [main] DEBUG GradingTest - HIGH_CARD :  HIGH_CARD
+18:39:39.466 [main] DEBUG GradingTest - comparing HIGH_CARD with HIGH_CARD
+18:39:39.467 [main] DEBUG GradingTest -   hand1 HIGH_CARD {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'EIGHT'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.468 [main] DEBUG GradingTest -   hand2 HIGH_CARD {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'CLUBS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'EIGHT'},{'suite':'SPADES','value':'NINE'}]}
+18:39:39.470 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.470 [main] DEBUG GradingTest -                      expected true
+18:39:39.470 [main] DEBUG GradingTest -                     FAIL
+18:39:39.471 [main] DEBUG GradingTest - HIGH_CARD :  ONE_PAIR
+18:39:39.473 [main] DEBUG GradingTest - comparing HIGH_CARD with ONE_PAIR
+18:39:39.473 [main] DEBUG GradingTest -   hand1 HIGH_CARD {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.473 [main] DEBUG GradingTest -   hand2 ONE_PAIR {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'CLUBS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'EIGHT'},{'suite':'SPADES','value':'NINE'}]}
+18:39:39.474 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.474 [main] DEBUG GradingTest -                      expected false
+18:39:39.474 [main] DEBUG GradingTest -                     PASS
+18:39:39.474 [main] DEBUG GradingTest - HIGH_CARD :  TWO_PAIR
+18:39:39.475 [main] DEBUG GradingTest - comparing HIGH_CARD with TWO_PAIR
+18:39:39.476 [main] DEBUG GradingTest -   hand1 HIGH_CARD {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.476 [main] DEBUG GradingTest -   hand2 TWO_PAIR {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'CLUBS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'EIGHT'},{'suite':'SPADES','value':'NINE'}]}
+18:39:39.476 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.476 [main] DEBUG GradingTest -                      expected false
+18:39:39.477 [main] DEBUG GradingTest -                     PASS
+18:39:39.477 [main] DEBUG GradingTest - HIGH_CARD :  THREE_OF_A_KIND
+18:39:39.478 [main] DEBUG GradingTest - comparing HIGH_CARD with THREE_OF_A_KIND
+18:39:39.478 [main] DEBUG GradingTest -   hand1 HIGH_CARD {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TWO'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.479 [main] DEBUG GradingTest -   hand2 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'CLUBS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'EIGHT'},{'suite':'SPADES','value':'NINE'}]}
+18:39:39.479 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.479 [main] DEBUG GradingTest -                      expected false
+18:39:39.479 [main] DEBUG GradingTest -                     PASS
+18:39:39.479 [main] DEBUG GradingTest - HIGH_CARD :  STRAIGHT
+18:39:39.481 [main] DEBUG GradingTest - comparing HIGH_CARD with STRAIGHT
+18:39:39.481 [main] DEBUG GradingTest -   hand1 HIGH_CARD {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'SEVEN'}]}
+18:39:39.481 [main] DEBUG GradingTest -   hand2 STRAIGHT {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'CLUBS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'EIGHT'},{'suite':'SPADES','value':'NINE'}]}
+18:39:39.481 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.481 [main] DEBUG GradingTest -                      expected false
+18:39:39.482 [main] DEBUG GradingTest -                     PASS
+18:39:39.483 [main] DEBUG GradingTest - HIGH_CARD :  FLUSH
+18:39:39.484 [main] DEBUG GradingTest - comparing HIGH_CARD with FLUSH
+18:39:39.485 [main] DEBUG GradingTest -   hand1 HIGH_CARD {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'DIAMONDS','value':'NINE'}]}
+18:39:39.485 [main] DEBUG GradingTest -   hand2 FLUSH {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'CLUBS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'EIGHT'},{'suite':'SPADES','value':'NINE'}]}
+18:39:39.485 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.485 [main] DEBUG GradingTest -                      expected false
+18:39:39.485 [main] DEBUG GradingTest -                     PASS
+18:39:39.486 [main] DEBUG GradingTest - HIGH_CARD :  FULL_HOUSE
+18:39:39.487 [main] DEBUG GradingTest - comparing HIGH_CARD with FULL_HOUSE
+18:39:39.487 [main] DEBUG GradingTest -   hand1 HIGH_CARD {'cards':[{'suite':'SPADES','value':'SEVEN'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'HEARTS','value':'KING'},{'suite':'SPADES','value':'KING'}]}
+18:39:39.487 [main] DEBUG GradingTest -   hand2 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'CLUBS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'EIGHT'},{'suite':'SPADES','value':'NINE'}]}
+18:39:39.488 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.488 [main] DEBUG GradingTest -                      expected false
+18:39:39.488 [main] DEBUG GradingTest -                     PASS
+18:39:39.488 [main] DEBUG GradingTest - HIGH_CARD :  FOUR_OF_A_KIND
+18:39:39.490 [main] DEBUG GradingTest - comparing HIGH_CARD with FOUR_OF_A_KIND
+18:39:39.490 [main] DEBUG GradingTest -   hand1 HIGH_CARD {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FOUR'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.491 [main] DEBUG GradingTest -   hand2 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'CLUBS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'EIGHT'},{'suite':'SPADES','value':'NINE'}]}
+18:39:39.491 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.491 [main] DEBUG GradingTest -                      expected false
+18:39:39.491 [main] DEBUG GradingTest -                     PASS
+18:39:39.491 [main] DEBUG GradingTest - HIGH_CARD :  STRAIGHT_FLUSH
+18:39:39.492 [main] DEBUG GradingTest - comparing HIGH_CARD with STRAIGHT_FLUSH
+18:39:39.493 [main] DEBUG GradingTest -   hand1 HIGH_CARD {'cards':[{'suite':'CLUBS','value':'TEN'},{'suite':'CLUBS','value':'NINE'},{'suite':'CLUBS','value':'EIGHT'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'CLUBS','value':'SIX'}]}
+18:39:39.493 [main] DEBUG GradingTest -   hand2 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'CLUBS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'EIGHT'},{'suite':'SPADES','value':'NINE'}]}
+18:39:39.493 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.494 [main] DEBUG GradingTest -                      expected false
+18:39:39.494 [main] DEBUG GradingTest -                     PASS
+18:39:39.494 [main] DEBUG GradingTest - ONE_PAIR :  HIGH_CARD
+18:39:39.495 [main] DEBUG GradingTest - comparing ONE_PAIR with HIGH_CARD
+18:39:39.496 [main] DEBUG GradingTest -   hand1 ONE_PAIR {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'EIGHT'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.496 [main] DEBUG GradingTest -   hand2 HIGH_CARD {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.497 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.497 [main] DEBUG GradingTest -                      expected true
+18:39:39.497 [main] DEBUG GradingTest -                     PASS
+18:39:39.498 [main] DEBUG GradingTest - ONE_PAIR :  ONE_PAIR
+18:39:39.499 [main] DEBUG GradingTest - comparing ONE_PAIR with ONE_PAIR
+18:39:39.499 [main] DEBUG GradingTest -   hand1 ONE_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.499 [main] DEBUG GradingTest -   hand2 ONE_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.500 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.500 [main] DEBUG GradingTest -                      expected true
+18:39:39.500 [main] DEBUG GradingTest -                     FAIL
+18:39:39.500 [main] DEBUG GradingTest - ONE_PAIR :  TWO_PAIR
+18:39:39.502 [main] DEBUG GradingTest - comparing ONE_PAIR with TWO_PAIR
+18:39:39.502 [main] DEBUG GradingTest -   hand1 ONE_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.502 [main] DEBUG GradingTest -   hand2 TWO_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.503 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.503 [main] DEBUG GradingTest -                      expected false
+18:39:39.503 [main] DEBUG GradingTest -                     PASS
+18:39:39.504 [main] DEBUG GradingTest - ONE_PAIR :  THREE_OF_A_KIND
+18:39:39.505 [main] DEBUG GradingTest - comparing ONE_PAIR with THREE_OF_A_KIND
+18:39:39.505 [main] DEBUG GradingTest -   hand1 ONE_PAIR {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TWO'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.505 [main] DEBUG GradingTest -   hand2 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.506 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.506 [main] DEBUG GradingTest -                      expected false
+18:39:39.506 [main] DEBUG GradingTest -                     PASS
+18:39:39.506 [main] DEBUG GradingTest - ONE_PAIR :  STRAIGHT
+18:39:39.507 [main] DEBUG GradingTest - comparing ONE_PAIR with STRAIGHT
+18:39:39.508 [main] DEBUG GradingTest -   hand1 ONE_PAIR {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'SEVEN'}]}
+18:39:39.508 [main] DEBUG GradingTest -   hand2 STRAIGHT {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.508 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.508 [main] DEBUG GradingTest -                      expected false
+18:39:39.509 [main] DEBUG GradingTest -                     PASS
+18:39:39.509 [main] DEBUG GradingTest - ONE_PAIR :  FLUSH
+18:39:39.511 [main] DEBUG GradingTest - comparing ONE_PAIR with FLUSH
+18:39:39.511 [main] DEBUG GradingTest -   hand1 ONE_PAIR {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'DIAMONDS','value':'NINE'}]}
+18:39:39.511 [main] DEBUG GradingTest -   hand2 FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.511 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.512 [main] DEBUG GradingTest -                      expected false
+18:39:39.512 [main] DEBUG GradingTest -                     PASS
+18:39:39.512 [main] DEBUG GradingTest - ONE_PAIR :  FULL_HOUSE
+18:39:39.513 [main] DEBUG GradingTest - comparing ONE_PAIR with FULL_HOUSE
+18:39:39.513 [main] DEBUG GradingTest -   hand1 ONE_PAIR {'cards':[{'suite':'SPADES','value':'SEVEN'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'HEARTS','value':'KING'},{'suite':'SPADES','value':'KING'}]}
+18:39:39.514 [main] DEBUG GradingTest -   hand2 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.514 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.514 [main] DEBUG GradingTest -                      expected false
+18:39:39.514 [main] DEBUG GradingTest -                     PASS
+18:39:39.514 [main] DEBUG GradingTest - ONE_PAIR :  FOUR_OF_A_KIND
+18:39:39.515 [main] DEBUG GradingTest - comparing ONE_PAIR with FOUR_OF_A_KIND
+18:39:39.516 [main] DEBUG GradingTest -   hand1 ONE_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FOUR'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.516 [main] DEBUG GradingTest -   hand2 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.516 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.516 [main] DEBUG GradingTest -                      expected false
+18:39:39.517 [main] DEBUG GradingTest -                     PASS
+18:39:39.517 [main] DEBUG GradingTest - ONE_PAIR :  STRAIGHT_FLUSH
+18:39:39.518 [main] DEBUG GradingTest - comparing ONE_PAIR with STRAIGHT_FLUSH
+18:39:39.518 [main] DEBUG GradingTest -   hand1 ONE_PAIR {'cards':[{'suite':'CLUBS','value':'TEN'},{'suite':'CLUBS','value':'NINE'},{'suite':'CLUBS','value':'EIGHT'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'CLUBS','value':'SIX'}]}
+18:39:39.518 [main] DEBUG GradingTest -   hand2 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.518 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.519 [main] DEBUG GradingTest -                      expected false
+18:39:39.519 [main] DEBUG GradingTest -                     PASS
+18:39:39.519 [main] DEBUG GradingTest - TWO_PAIR :  HIGH_CARD
+18:39:39.520 [main] DEBUG GradingTest - comparing TWO_PAIR with HIGH_CARD
+18:39:39.520 [main] DEBUG GradingTest -   hand1 TWO_PAIR {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'EIGHT'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.521 [main] DEBUG GradingTest -   hand2 HIGH_CARD {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.521 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.521 [main] DEBUG GradingTest -                      expected true
+18:39:39.521 [main] DEBUG GradingTest -                     PASS
+18:39:39.521 [main] DEBUG GradingTest - TWO_PAIR :  ONE_PAIR
+18:39:39.523 [main] DEBUG GradingTest - comparing TWO_PAIR with ONE_PAIR
+18:39:39.523 [main] DEBUG GradingTest -   hand1 TWO_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.523 [main] DEBUG GradingTest -   hand2 ONE_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.524 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.524 [main] DEBUG GradingTest -                      expected true
+18:39:39.524 [main] DEBUG GradingTest -                     PASS
+18:39:39.524 [main] DEBUG GradingTest - TWO_PAIR :  TWO_PAIR
+18:39:39.525 [main] DEBUG GradingTest - comparing TWO_PAIR with TWO_PAIR
+18:39:39.525 [main] DEBUG GradingTest -   hand1 TWO_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.526 [main] DEBUG GradingTest -   hand2 TWO_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.526 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.526 [main] DEBUG GradingTest -                      expected true
+18:39:39.526 [main] DEBUG GradingTest -                     FAIL
+18:39:39.526 [main] DEBUG GradingTest - TWO_PAIR :  THREE_OF_A_KIND
+18:39:39.527 [main] DEBUG GradingTest - comparing TWO_PAIR with THREE_OF_A_KIND
+18:39:39.528 [main] DEBUG GradingTest -   hand1 TWO_PAIR {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TWO'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.528 [main] DEBUG GradingTest -   hand2 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.528 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.528 [main] DEBUG GradingTest -                      expected false
+18:39:39.528 [main] DEBUG GradingTest -                     PASS
+18:39:39.528 [main] DEBUG GradingTest - TWO_PAIR :  STRAIGHT
+18:39:39.529 [main] DEBUG GradingTest - comparing TWO_PAIR with STRAIGHT
+18:39:39.530 [main] DEBUG GradingTest -   hand1 TWO_PAIR {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'SEVEN'}]}
+18:39:39.530 [main] DEBUG GradingTest -   hand2 STRAIGHT {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.530 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.530 [main] DEBUG GradingTest -                      expected false
+18:39:39.531 [main] DEBUG GradingTest -                     PASS
+18:39:39.531 [main] DEBUG GradingTest - TWO_PAIR :  FLUSH
+18:39:39.532 [main] DEBUG GradingTest - comparing TWO_PAIR with FLUSH
+18:39:39.532 [main] DEBUG GradingTest -   hand1 TWO_PAIR {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'DIAMONDS','value':'NINE'}]}
+18:39:39.533 [main] DEBUG GradingTest -   hand2 FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.533 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.533 [main] DEBUG GradingTest -                      expected false
+18:39:39.533 [main] DEBUG GradingTest -                     PASS
+18:39:39.533 [main] DEBUG GradingTest - TWO_PAIR :  FULL_HOUSE
+18:39:39.535 [main] DEBUG GradingTest - comparing TWO_PAIR with FULL_HOUSE
+18:39:39.536 [main] DEBUG GradingTest -   hand1 TWO_PAIR {'cards':[{'suite':'SPADES','value':'SEVEN'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'HEARTS','value':'KING'},{'suite':'SPADES','value':'KING'}]}
+18:39:39.536 [main] DEBUG GradingTest -   hand2 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.536 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.537 [main] DEBUG GradingTest -                      expected false
+18:39:39.537 [main] DEBUG GradingTest -                     PASS
+18:39:39.537 [main] DEBUG GradingTest - TWO_PAIR :  FOUR_OF_A_KIND
+18:39:39.538 [main] DEBUG GradingTest - comparing TWO_PAIR with FOUR_OF_A_KIND
+18:39:39.539 [main] DEBUG GradingTest -   hand1 TWO_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FOUR'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.539 [main] DEBUG GradingTest -   hand2 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.539 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.539 [main] DEBUG GradingTest -                      expected false
+18:39:39.539 [main] DEBUG GradingTest -                     PASS
+18:39:39.540 [main] DEBUG GradingTest - TWO_PAIR :  STRAIGHT_FLUSH
+18:39:39.541 [main] DEBUG GradingTest - comparing TWO_PAIR with STRAIGHT_FLUSH
+18:39:39.541 [main] DEBUG GradingTest -   hand1 TWO_PAIR {'cards':[{'suite':'CLUBS','value':'TEN'},{'suite':'CLUBS','value':'NINE'},{'suite':'CLUBS','value':'EIGHT'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'CLUBS','value':'SIX'}]}
+18:39:39.541 [main] DEBUG GradingTest -   hand2 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.542 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.542 [main] DEBUG GradingTest -                      expected false
+18:39:39.542 [main] DEBUG GradingTest -                     PASS
+18:39:39.542 [main] DEBUG GradingTest - THREE_OF_A_KIND :  HIGH_CARD
+18:39:39.543 [main] DEBUG GradingTest - comparing THREE_OF_A_KIND with HIGH_CARD
+18:39:39.544 [main] DEBUG GradingTest -   hand1 THREE_OF_A_KIND {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'EIGHT'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.544 [main] DEBUG GradingTest -   hand2 HIGH_CARD {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.544 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.544 [main] DEBUG GradingTest -                      expected true
+18:39:39.545 [main] DEBUG GradingTest -                     PASS
+18:39:39.545 [main] DEBUG GradingTest - THREE_OF_A_KIND :  ONE_PAIR
+18:39:39.546 [main] DEBUG GradingTest - comparing THREE_OF_A_KIND with ONE_PAIR
+18:39:39.547 [main] DEBUG GradingTest -   hand1 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.547 [main] DEBUG GradingTest -   hand2 ONE_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.547 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.547 [main] DEBUG GradingTest -                      expected true
+18:39:39.548 [main] DEBUG GradingTest -                     PASS
+18:39:39.548 [main] DEBUG GradingTest - THREE_OF_A_KIND :  TWO_PAIR
+18:39:39.549 [main] DEBUG GradingTest - comparing THREE_OF_A_KIND with TWO_PAIR
+18:39:39.550 [main] DEBUG GradingTest -   hand1 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.551 [main] DEBUG GradingTest -   hand2 TWO_PAIR {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.551 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.551 [main] DEBUG GradingTest -                      expected true
+18:39:39.552 [main] DEBUG GradingTest -                     PASS
+18:39:39.552 [main] DEBUG GradingTest - THREE_OF_A_KIND :  THREE_OF_A_KIND
+18:39:39.553 [main] DEBUG GradingTest - comparing THREE_OF_A_KIND with THREE_OF_A_KIND
+18:39:39.553 [main] DEBUG GradingTest -   hand1 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TWO'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.553 [main] DEBUG GradingTest -   hand2 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.553 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.553 [main] DEBUG GradingTest -                      expected true
+18:39:39.554 [main] DEBUG GradingTest -                     FAIL
+18:39:39.554 [main] DEBUG GradingTest - THREE_OF_A_KIND :  STRAIGHT
+18:39:39.555 [main] DEBUG GradingTest - comparing THREE_OF_A_KIND with STRAIGHT
+18:39:39.555 [main] DEBUG GradingTest -   hand1 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'SEVEN'}]}
+18:39:39.555 [main] DEBUG GradingTest -   hand2 STRAIGHT {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.555 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.556 [main] DEBUG GradingTest -                      expected false
+18:39:39.556 [main] DEBUG GradingTest -                     PASS
+18:39:39.556 [main] DEBUG GradingTest - THREE_OF_A_KIND :  FLUSH
+18:39:39.557 [main] DEBUG GradingTest - comparing THREE_OF_A_KIND with FLUSH
+18:39:39.557 [main] DEBUG GradingTest -   hand1 THREE_OF_A_KIND {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'DIAMONDS','value':'NINE'}]}
+18:39:39.557 [main] DEBUG GradingTest -   hand2 FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.557 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.558 [main] DEBUG GradingTest -                      expected false
+18:39:39.558 [main] DEBUG GradingTest -                     PASS
+18:39:39.558 [main] DEBUG GradingTest - THREE_OF_A_KIND :  FULL_HOUSE
+18:39:39.559 [main] DEBUG GradingTest - comparing THREE_OF_A_KIND with FULL_HOUSE
+18:39:39.559 [main] DEBUG GradingTest -   hand1 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'SEVEN'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'HEARTS','value':'KING'},{'suite':'SPADES','value':'KING'}]}
+18:39:39.559 [main] DEBUG GradingTest -   hand2 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.559 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.559 [main] DEBUG GradingTest -                      expected false
+18:39:39.560 [main] DEBUG GradingTest -                     PASS
+18:39:39.560 [main] DEBUG GradingTest - THREE_OF_A_KIND :  FOUR_OF_A_KIND
+18:39:39.561 [main] DEBUG GradingTest - comparing THREE_OF_A_KIND with FOUR_OF_A_KIND
+18:39:39.561 [main] DEBUG GradingTest -   hand1 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FOUR'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.561 [main] DEBUG GradingTest -   hand2 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.561 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.561 [main] DEBUG GradingTest -                      expected false
+18:39:39.561 [main] DEBUG GradingTest -                     PASS
+18:39:39.562 [main] DEBUG GradingTest - THREE_OF_A_KIND :  STRAIGHT_FLUSH
+18:39:39.564 [main] DEBUG GradingTest - comparing THREE_OF_A_KIND with STRAIGHT_FLUSH
+18:39:39.564 [main] DEBUG GradingTest -   hand1 THREE_OF_A_KIND {'cards':[{'suite':'CLUBS','value':'TEN'},{'suite':'CLUBS','value':'NINE'},{'suite':'CLUBS','value':'EIGHT'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'CLUBS','value':'SIX'}]}
+18:39:39.564 [main] DEBUG GradingTest -   hand2 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.565 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.565 [main] DEBUG GradingTest -                      expected false
+18:39:39.565 [main] DEBUG GradingTest -                     PASS
+18:39:39.565 [main] DEBUG GradingTest - STRAIGHT :  HIGH_CARD
+18:39:39.566 [main] DEBUG GradingTest - comparing STRAIGHT with HIGH_CARD
+18:39:39.567 [main] DEBUG GradingTest -   hand1 STRAIGHT {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'EIGHT'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.567 [main] DEBUG GradingTest -   hand2 HIGH_CARD {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'SIX'}]}
+18:39:39.567 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.567 [main] DEBUG GradingTest -                      expected true
+18:39:39.568 [main] DEBUG GradingTest -                     PASS
+18:39:39.568 [main] DEBUG GradingTest - STRAIGHT :  ONE_PAIR
+18:39:39.569 [main] DEBUG GradingTest - comparing STRAIGHT with ONE_PAIR
+18:39:39.569 [main] DEBUG GradingTest -   hand1 STRAIGHT {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.569 [main] DEBUG GradingTest -   hand2 ONE_PAIR {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'SIX'}]}
+18:39:39.570 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.570 [main] DEBUG GradingTest -                      expected true
+18:39:39.570 [main] DEBUG GradingTest -                     PASS
+18:39:39.570 [main] DEBUG GradingTest - STRAIGHT :  TWO_PAIR
+18:39:39.571 [main] DEBUG GradingTest - comparing STRAIGHT with TWO_PAIR
+18:39:39.572 [main] DEBUG GradingTest -   hand1 STRAIGHT {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.572 [main] DEBUG GradingTest -   hand2 TWO_PAIR {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'SIX'}]}
+18:39:39.572 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.573 [main] DEBUG GradingTest -                      expected true
+18:39:39.573 [main] DEBUG GradingTest -                     PASS
+18:39:39.573 [main] DEBUG GradingTest - STRAIGHT :  THREE_OF_A_KIND
+18:39:39.574 [main] DEBUG GradingTest - comparing STRAIGHT with THREE_OF_A_KIND
+18:39:39.574 [main] DEBUG GradingTest -   hand1 STRAIGHT {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TWO'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.575 [main] DEBUG GradingTest -   hand2 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'SIX'}]}
+18:39:39.575 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.575 [main] DEBUG GradingTest -                      expected true
+18:39:39.575 [main] DEBUG GradingTest -                     PASS
+18:39:39.576 [main] DEBUG GradingTest - STRAIGHT :  STRAIGHT
+18:39:39.577 [main] DEBUG GradingTest - comparing STRAIGHT with STRAIGHT
+18:39:39.577 [main] DEBUG GradingTest -   hand1 STRAIGHT {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'SEVEN'}]}
+18:39:39.577 [main] DEBUG GradingTest -   hand2 STRAIGHT {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'SIX'}]}
+18:39:39.577 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.577 [main] DEBUG GradingTest -                      expected true
+18:39:39.578 [main] DEBUG GradingTest -                     FAIL
+18:39:39.578 [main] DEBUG GradingTest - STRAIGHT :  FLUSH
+18:39:39.578 [main] DEBUG GradingTest - comparing STRAIGHT with FLUSH
+18:39:39.578 [main] DEBUG GradingTest -   hand1 STRAIGHT {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'DIAMONDS','value':'NINE'}]}
+18:39:39.579 [main] DEBUG GradingTest -   hand2 FLUSH {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'SIX'}]}
+18:39:39.579 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.579 [main] DEBUG GradingTest -                      expected false
+18:39:39.579 [main] DEBUG GradingTest -                     PASS
+18:39:39.579 [main] DEBUG GradingTest - STRAIGHT :  FULL_HOUSE
+18:39:39.580 [main] DEBUG GradingTest - comparing STRAIGHT with FULL_HOUSE
+18:39:39.580 [main] DEBUG GradingTest -   hand1 STRAIGHT {'cards':[{'suite':'SPADES','value':'SEVEN'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'HEARTS','value':'KING'},{'suite':'SPADES','value':'KING'}]}
+18:39:39.580 [main] DEBUG GradingTest -   hand2 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'SIX'}]}
+18:39:39.580 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.581 [main] DEBUG GradingTest -                      expected false
+18:39:39.581 [main] DEBUG GradingTest -                     PASS
+18:39:39.581 [main] DEBUG GradingTest - STRAIGHT :  FOUR_OF_A_KIND
+18:39:39.582 [main] DEBUG GradingTest - comparing STRAIGHT with FOUR_OF_A_KIND
+18:39:39.582 [main] DEBUG GradingTest -   hand1 STRAIGHT {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FOUR'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.582 [main] DEBUG GradingTest -   hand2 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'SIX'}]}
+18:39:39.582 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.582 [main] DEBUG GradingTest -                      expected false
+18:39:39.582 [main] DEBUG GradingTest -                     PASS
+18:39:39.583 [main] DEBUG GradingTest - STRAIGHT :  STRAIGHT_FLUSH
+18:39:39.583 [main] DEBUG GradingTest - comparing STRAIGHT with STRAIGHT_FLUSH
+18:39:39.584 [main] DEBUG GradingTest -   hand1 STRAIGHT {'cards':[{'suite':'CLUBS','value':'TEN'},{'suite':'CLUBS','value':'NINE'},{'suite':'CLUBS','value':'EIGHT'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'CLUBS','value':'SIX'}]}
+18:39:39.584 [main] DEBUG GradingTest -   hand2 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'SIX'}]}
+18:39:39.584 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.584 [main] DEBUG GradingTest -                      expected false
+18:39:39.584 [main] DEBUG GradingTest -                     PASS
+18:39:39.584 [main] DEBUG GradingTest - FLUSH :  HIGH_CARD
+18:39:39.585 [main] DEBUG GradingTest - comparing FLUSH with HIGH_CARD
+18:39:39.585 [main] DEBUG GradingTest -   hand1 FLUSH {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'EIGHT'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.585 [main] DEBUG GradingTest -   hand2 HIGH_CARD {'cards':[{'suite':'SPADES','value':'KING'},{'suite':'SPADES','value':'SIX'},{'suite':'SPADES','value':'FIVE'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.585 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.586 [main] DEBUG GradingTest -                      expected true
+18:39:39.586 [main] DEBUG GradingTest -                     PASS
+18:39:39.586 [main] DEBUG GradingTest - FLUSH :  ONE_PAIR
+18:39:39.587 [main] DEBUG GradingTest - comparing FLUSH with ONE_PAIR
+18:39:39.587 [main] DEBUG GradingTest -   hand1 FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.587 [main] DEBUG GradingTest -   hand2 ONE_PAIR {'cards':[{'suite':'SPADES','value':'KING'},{'suite':'SPADES','value':'SIX'},{'suite':'SPADES','value':'FIVE'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.587 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.588 [main] DEBUG GradingTest -                      expected true
+18:39:39.588 [main] DEBUG GradingTest -                     PASS
+18:39:39.588 [main] DEBUG GradingTest - FLUSH :  TWO_PAIR
+18:39:39.589 [main] DEBUG GradingTest - comparing FLUSH with TWO_PAIR
+18:39:39.590 [main] DEBUG GradingTest -   hand1 FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.590 [main] DEBUG GradingTest -   hand2 TWO_PAIR {'cards':[{'suite':'SPADES','value':'KING'},{'suite':'SPADES','value':'SIX'},{'suite':'SPADES','value':'FIVE'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.590 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.590 [main] DEBUG GradingTest -                      expected true
+18:39:39.590 [main] DEBUG GradingTest -                     PASS
+18:39:39.590 [main] DEBUG GradingTest - FLUSH :  THREE_OF_A_KIND
+18:39:39.591 [main] DEBUG GradingTest - comparing FLUSH with THREE_OF_A_KIND
+18:39:39.592 [main] DEBUG GradingTest -   hand1 FLUSH {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TWO'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.592 [main] DEBUG GradingTest -   hand2 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'KING'},{'suite':'SPADES','value':'SIX'},{'suite':'SPADES','value':'FIVE'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.592 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.592 [main] DEBUG GradingTest -                      expected true
+18:39:39.592 [main] DEBUG GradingTest -                     PASS
+18:39:39.592 [main] DEBUG GradingTest - FLUSH :  STRAIGHT
+18:39:39.593 [main] DEBUG GradingTest - comparing FLUSH with STRAIGHT
+18:39:39.593 [main] DEBUG GradingTest -   hand1 FLUSH {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'SEVEN'}]}
+18:39:39.593 [main] DEBUG GradingTest -   hand2 STRAIGHT {'cards':[{'suite':'SPADES','value':'KING'},{'suite':'SPADES','value':'SIX'},{'suite':'SPADES','value':'FIVE'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.593 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.594 [main] DEBUG GradingTest -                      expected true
+18:39:39.594 [main] DEBUG GradingTest -                     PASS
+18:39:39.594 [main] DEBUG GradingTest - FLUSH :  FLUSH
+18:39:39.595 [main] DEBUG GradingTest - comparing FLUSH with FLUSH
+18:39:39.595 [main] DEBUG GradingTest -   hand1 FLUSH {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'DIAMONDS','value':'NINE'}]}
+18:39:39.595 [main] DEBUG GradingTest -   hand2 FLUSH {'cards':[{'suite':'SPADES','value':'KING'},{'suite':'SPADES','value':'SIX'},{'suite':'SPADES','value':'FIVE'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.595 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.595 [main] DEBUG GradingTest -                      expected true
+18:39:39.595 [main] DEBUG GradingTest -                     PASS
+18:39:39.595 [main] DEBUG GradingTest - FLUSH :  FULL_HOUSE
+18:39:39.596 [main] DEBUG GradingTest - comparing FLUSH with FULL_HOUSE
+18:39:39.597 [main] DEBUG GradingTest -   hand1 FLUSH {'cards':[{'suite':'SPADES','value':'SEVEN'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'HEARTS','value':'KING'},{'suite':'SPADES','value':'KING'}]}
+18:39:39.597 [main] DEBUG GradingTest -   hand2 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'KING'},{'suite':'SPADES','value':'SIX'},{'suite':'SPADES','value':'FIVE'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.597 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.597 [main] DEBUG GradingTest -                      expected false
+18:39:39.597 [main] DEBUG GradingTest -                     PASS
+18:39:39.597 [main] DEBUG GradingTest - FLUSH :  FOUR_OF_A_KIND
+18:39:39.598 [main] DEBUG GradingTest - comparing FLUSH with FOUR_OF_A_KIND
+18:39:39.598 [main] DEBUG GradingTest -   hand1 FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FOUR'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.598 [main] DEBUG GradingTest -   hand2 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'KING'},{'suite':'SPADES','value':'SIX'},{'suite':'SPADES','value':'FIVE'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.599 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.599 [main] DEBUG GradingTest -                      expected false
+18:39:39.599 [main] DEBUG GradingTest -                     PASS
+18:39:39.599 [main] DEBUG GradingTest - FLUSH :  STRAIGHT_FLUSH
+18:39:39.600 [main] DEBUG GradingTest - comparing FLUSH with STRAIGHT_FLUSH
+18:39:39.600 [main] DEBUG GradingTest -   hand1 FLUSH {'cards':[{'suite':'CLUBS','value':'TEN'},{'suite':'CLUBS','value':'NINE'},{'suite':'CLUBS','value':'EIGHT'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'CLUBS','value':'SIX'}]}
+18:39:39.600 [main] DEBUG GradingTest -   hand2 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'KING'},{'suite':'SPADES','value':'SIX'},{'suite':'SPADES','value':'FIVE'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.600 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.601 [main] DEBUG GradingTest -                      expected false
+18:39:39.601 [main] DEBUG GradingTest -                     FAIL
+18:39:39.601 [main] DEBUG GradingTest - FULL_HOUSE :  HIGH_CARD
+18:39:39.602 [main] DEBUG GradingTest - comparing FULL_HOUSE with HIGH_CARD
+18:39:39.602 [main] DEBUG GradingTest -   hand1 FULL_HOUSE {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'EIGHT'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.602 [main] DEBUG GradingTest -   hand2 HIGH_CARD {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TEN'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.603 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.603 [main] DEBUG GradingTest -                      expected true
+18:39:39.603 [main] DEBUG GradingTest -                     PASS
+18:39:39.603 [main] DEBUG GradingTest - FULL_HOUSE :  ONE_PAIR
+18:39:39.604 [main] DEBUG GradingTest - comparing FULL_HOUSE with ONE_PAIR
+18:39:39.604 [main] DEBUG GradingTest -   hand1 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.604 [main] DEBUG GradingTest -   hand2 ONE_PAIR {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TEN'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.605 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.605 [main] DEBUG GradingTest -                      expected true
+18:39:39.605 [main] DEBUG GradingTest -                     PASS
+18:39:39.605 [main] DEBUG GradingTest - FULL_HOUSE :  TWO_PAIR
+18:39:39.606 [main] DEBUG GradingTest - comparing FULL_HOUSE with TWO_PAIR
+18:39:39.606 [main] DEBUG GradingTest -   hand1 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.606 [main] DEBUG GradingTest -   hand2 TWO_PAIR {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TEN'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.606 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.606 [main] DEBUG GradingTest -                      expected true
+18:39:39.607 [main] DEBUG GradingTest -                     PASS
+18:39:39.607 [main] DEBUG GradingTest - FULL_HOUSE :  THREE_OF_A_KIND
+18:39:39.608 [main] DEBUG GradingTest - comparing FULL_HOUSE with THREE_OF_A_KIND
+18:39:39.608 [main] DEBUG GradingTest -   hand1 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TWO'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.608 [main] DEBUG GradingTest -   hand2 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TEN'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.608 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.608 [main] DEBUG GradingTest -                      expected true
+18:39:39.608 [main] DEBUG GradingTest -                     PASS
+18:39:39.608 [main] DEBUG GradingTest - FULL_HOUSE :  STRAIGHT
+18:39:39.609 [main] DEBUG GradingTest - comparing FULL_HOUSE with STRAIGHT
+18:39:39.609 [main] DEBUG GradingTest -   hand1 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'SEVEN'}]}
+18:39:39.609 [main] DEBUG GradingTest -   hand2 STRAIGHT {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TEN'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.609 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.609 [main] DEBUG GradingTest -                      expected true
+18:39:39.609 [main] DEBUG GradingTest -                     PASS
+18:39:39.610 [main] DEBUG GradingTest - FULL_HOUSE :  FLUSH
+18:39:39.610 [main] DEBUG GradingTest - comparing FULL_HOUSE with FLUSH
+18:39:39.610 [main] DEBUG GradingTest -   hand1 FULL_HOUSE {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'DIAMONDS','value':'NINE'}]}
+18:39:39.610 [main] DEBUG GradingTest -   hand2 FLUSH {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TEN'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.610 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.611 [main] DEBUG GradingTest -                      expected true
+18:39:39.611 [main] DEBUG GradingTest -                     PASS
+18:39:39.611 [main] DEBUG GradingTest - FULL_HOUSE :  FULL_HOUSE
+18:39:39.612 [main] DEBUG GradingTest - comparing FULL_HOUSE with FULL_HOUSE
+18:39:39.612 [main] DEBUG GradingTest -   hand1 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'SEVEN'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'HEARTS','value':'KING'},{'suite':'SPADES','value':'KING'}]}
+18:39:39.612 [main] DEBUG GradingTest -   hand2 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TEN'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.612 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.612 [main] DEBUG GradingTest -                      expected true
+18:39:39.612 [main] DEBUG GradingTest -                     FAIL
+18:39:39.612 [main] DEBUG GradingTest - FULL_HOUSE :  FOUR_OF_A_KIND
+18:39:39.613 [main] DEBUG GradingTest - comparing FULL_HOUSE with FOUR_OF_A_KIND
+18:39:39.613 [main] DEBUG GradingTest -   hand1 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FOUR'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.613 [main] DEBUG GradingTest -   hand2 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TEN'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.614 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.614 [main] DEBUG GradingTest -                      expected false
+18:39:39.614 [main] DEBUG GradingTest -                     PASS
+18:39:39.614 [main] DEBUG GradingTest - FULL_HOUSE :  STRAIGHT_FLUSH
+18:39:39.615 [main] DEBUG GradingTest - comparing FULL_HOUSE with STRAIGHT_FLUSH
+18:39:39.615 [main] DEBUG GradingTest -   hand1 FULL_HOUSE {'cards':[{'suite':'CLUBS','value':'TEN'},{'suite':'CLUBS','value':'NINE'},{'suite':'CLUBS','value':'EIGHT'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'CLUBS','value':'SIX'}]}
+18:39:39.616 [main] DEBUG GradingTest -   hand2 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TEN'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.616 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.616 [main] DEBUG GradingTest -                      expected false
+18:39:39.616 [main] DEBUG GradingTest -                     FAIL
+18:39:39.616 [main] DEBUG GradingTest - FOUR_OF_A_KIND :  HIGH_CARD
+18:39:39.617 [main] DEBUG GradingTest - comparing FOUR_OF_A_KIND with HIGH_CARD
+18:39:39.617 [main] DEBUG GradingTest -   hand1 FOUR_OF_A_KIND {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'EIGHT'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.617 [main] DEBUG GradingTest -   hand2 HIGH_CARD {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'THREE'},{'suite':'HEARTS','value':'THREE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.617 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.618 [main] DEBUG GradingTest -                      expected true
+18:39:39.618 [main] DEBUG GradingTest -                     PASS
+18:39:39.618 [main] DEBUG GradingTest - FOUR_OF_A_KIND :  ONE_PAIR
+18:39:39.619 [main] DEBUG GradingTest - comparing FOUR_OF_A_KIND with ONE_PAIR
+18:39:39.619 [main] DEBUG GradingTest -   hand1 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.619 [main] DEBUG GradingTest -   hand2 ONE_PAIR {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'THREE'},{'suite':'HEARTS','value':'THREE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.619 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.619 [main] DEBUG GradingTest -                      expected true
+18:39:39.619 [main] DEBUG GradingTest -                     PASS
+18:39:39.620 [main] DEBUG GradingTest - FOUR_OF_A_KIND :  TWO_PAIR
+18:39:39.621 [main] DEBUG GradingTest - comparing FOUR_OF_A_KIND with TWO_PAIR
+18:39:39.621 [main] DEBUG GradingTest -   hand1 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.621 [main] DEBUG GradingTest -   hand2 TWO_PAIR {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'THREE'},{'suite':'HEARTS','value':'THREE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.621 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.622 [main] DEBUG GradingTest -                      expected true
+18:39:39.622 [main] DEBUG GradingTest -                     PASS
+18:39:39.622 [main] DEBUG GradingTest - FOUR_OF_A_KIND :  THREE_OF_A_KIND
+18:39:39.623 [main] DEBUG GradingTest - comparing FOUR_OF_A_KIND with THREE_OF_A_KIND
+18:39:39.623 [main] DEBUG GradingTest -   hand1 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TWO'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.623 [main] DEBUG GradingTest -   hand2 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'THREE'},{'suite':'HEARTS','value':'THREE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.623 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.624 [main] DEBUG GradingTest -                      expected true
+18:39:39.624 [main] DEBUG GradingTest -                     PASS
+18:39:39.624 [main] DEBUG GradingTest - FOUR_OF_A_KIND :  STRAIGHT
+18:39:39.625 [main] DEBUG GradingTest - comparing FOUR_OF_A_KIND with STRAIGHT
+18:39:39.625 [main] DEBUG GradingTest -   hand1 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'SEVEN'}]}
+18:39:39.625 [main] DEBUG GradingTest -   hand2 STRAIGHT {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'THREE'},{'suite':'HEARTS','value':'THREE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.625 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.626 [main] DEBUG GradingTest -                      expected true
+18:39:39.626 [main] DEBUG GradingTest -                     PASS
+18:39:39.626 [main] DEBUG GradingTest - FOUR_OF_A_KIND :  FLUSH
+18:39:39.627 [main] DEBUG GradingTest - comparing FOUR_OF_A_KIND with FLUSH
+18:39:39.627 [main] DEBUG GradingTest -   hand1 FOUR_OF_A_KIND {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'DIAMONDS','value':'NINE'}]}
+18:39:39.627 [main] DEBUG GradingTest -   hand2 FLUSH {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'THREE'},{'suite':'HEARTS','value':'THREE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.627 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.627 [main] DEBUG GradingTest -                      expected true
+18:39:39.627 [main] DEBUG GradingTest -                     PASS
+18:39:39.627 [main] DEBUG GradingTest - FOUR_OF_A_KIND :  FULL_HOUSE
+18:39:39.628 [main] DEBUG GradingTest - comparing FOUR_OF_A_KIND with FULL_HOUSE
+18:39:39.628 [main] DEBUG GradingTest -   hand1 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'SEVEN'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'HEARTS','value':'KING'},{'suite':'SPADES','value':'KING'}]}
+18:39:39.628 [main] DEBUG GradingTest -   hand2 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'THREE'},{'suite':'HEARTS','value':'THREE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.629 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.629 [main] DEBUG GradingTest -                      expected true
+18:39:39.629 [main] DEBUG GradingTest -                     PASS
+18:39:39.629 [main] DEBUG GradingTest - FOUR_OF_A_KIND :  FOUR_OF_A_KIND
+18:39:39.630 [main] DEBUG GradingTest - comparing FOUR_OF_A_KIND with FOUR_OF_A_KIND
+18:39:39.631 [main] DEBUG GradingTest -   hand1 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FOUR'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.631 [main] DEBUG GradingTest -   hand2 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'THREE'},{'suite':'HEARTS','value':'THREE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.631 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.631 [main] DEBUG GradingTest -                      expected true
+18:39:39.631 [main] DEBUG GradingTest -                     FAIL
+18:39:39.631 [main] DEBUG GradingTest - FOUR_OF_A_KIND :  STRAIGHT_FLUSH
+18:39:39.632 [main] DEBUG GradingTest - comparing FOUR_OF_A_KIND with STRAIGHT_FLUSH
+18:39:39.632 [main] DEBUG GradingTest -   hand1 FOUR_OF_A_KIND {'cards':[{'suite':'CLUBS','value':'TEN'},{'suite':'CLUBS','value':'NINE'},{'suite':'CLUBS','value':'EIGHT'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'CLUBS','value':'SIX'}]}
+18:39:39.632 [main] DEBUG GradingTest -   hand2 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'CLUBS','value':'THREE'},{'suite':'HEARTS','value':'THREE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.632 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.633 [main] DEBUG GradingTest -                      expected false
+18:39:39.633 [main] DEBUG GradingTest -                     FAIL
+18:39:39.633 [main] DEBUG GradingTest - STRAIGHT_FLUSH :  HIGH_CARD
+18:39:39.634 [main] DEBUG GradingTest - comparing STRAIGHT_FLUSH with HIGH_CARD
+18:39:39.634 [main] DEBUG GradingTest -   hand1 STRAIGHT_FLUSH {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'EIGHT'},{'suite':'SPADES','value':'TEN'}]}
+18:39:39.634 [main] DEBUG GradingTest -   hand2 HIGH_CARD {'cards':[{'suite':'SPADES','value':'QUEEN'},{'suite':'SPADES','value':'JACK'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'NINE'},{'suite':'SPADES','value':'EIGHT'}]}
+18:39:39.634 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.634 [main] DEBUG GradingTest -                      expected true
+18:39:39.635 [main] DEBUG GradingTest -                     PASS
+18:39:39.635 [main] DEBUG GradingTest - STRAIGHT_FLUSH :  ONE_PAIR
+18:39:39.636 [main] DEBUG GradingTest - comparing STRAIGHT_FLUSH with ONE_PAIR
+18:39:39.636 [main] DEBUG GradingTest -   hand1 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'FIVE'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.636 [main] DEBUG GradingTest -   hand2 ONE_PAIR {'cards':[{'suite':'SPADES','value':'QUEEN'},{'suite':'SPADES','value':'JACK'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'NINE'},{'suite':'SPADES','value':'EIGHT'}]}
+18:39:39.637 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.637 [main] DEBUG GradingTest -                      expected true
+18:39:39.637 [main] DEBUG GradingTest -                     PASS
+18:39:39.637 [main] DEBUG GradingTest - STRAIGHT_FLUSH :  TWO_PAIR
+18:39:39.638 [main] DEBUG GradingTest - comparing STRAIGHT_FLUSH with TWO_PAIR
+18:39:39.638 [main] DEBUG GradingTest -   hand1 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.638 [main] DEBUG GradingTest -   hand2 TWO_PAIR {'cards':[{'suite':'SPADES','value':'QUEEN'},{'suite':'SPADES','value':'JACK'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'NINE'},{'suite':'SPADES','value':'EIGHT'}]}
+18:39:39.638 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.638 [main] DEBUG GradingTest -                      expected true
+18:39:39.638 [main] DEBUG GradingTest -                     PASS
+18:39:39.638 [main] DEBUG GradingTest - STRAIGHT_FLUSH :  THREE_OF_A_KIND
+18:39:39.639 [main] DEBUG GradingTest - comparing STRAIGHT_FLUSH with THREE_OF_A_KIND
+18:39:39.640 [main] DEBUG GradingTest -   hand1 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'SIX'},{'suite':'DIAMONDS','value':'SIX'},{'suite':'CLUBS','value':'SIX'},{'suite':'HEARTS','value':'TWO'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.640 [main] DEBUG GradingTest -   hand2 THREE_OF_A_KIND {'cards':[{'suite':'SPADES','value':'QUEEN'},{'suite':'SPADES','value':'JACK'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'NINE'},{'suite':'SPADES','value':'EIGHT'}]}
+18:39:39.640 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.640 [main] DEBUG GradingTest -                      expected true
+18:39:39.640 [main] DEBUG GradingTest -                     PASS
+18:39:39.640 [main] DEBUG GradingTest - STRAIGHT_FLUSH :  STRAIGHT
+18:39:39.641 [main] DEBUG GradingTest - comparing STRAIGHT_FLUSH with STRAIGHT
+18:39:39.641 [main] DEBUG GradingTest -   hand1 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'THREE'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FIVE'},{'suite':'HEARTS','value':'SIX'},{'suite':'SPADES','value':'SEVEN'}]}
+18:39:39.641 [main] DEBUG GradingTest -   hand2 STRAIGHT {'cards':[{'suite':'SPADES','value':'QUEEN'},{'suite':'SPADES','value':'JACK'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'NINE'},{'suite':'SPADES','value':'EIGHT'}]}
+18:39:39.641 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.642 [main] DEBUG GradingTest -                      expected true
+18:39:39.642 [main] DEBUG GradingTest -                     PASS
+18:39:39.642 [main] DEBUG GradingTest - STRAIGHT_FLUSH :  FLUSH
+18:39:39.643 [main] DEBUG GradingTest - comparing STRAIGHT_FLUSH with FLUSH
+18:39:39.643 [main] DEBUG GradingTest -   hand1 STRAIGHT_FLUSH {'cards':[{'suite':'DIAMONDS','value':'TWO'},{'suite':'DIAMONDS','value':'THREE'},{'suite':'DIAMONDS','value':'FIVE'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'DIAMONDS','value':'NINE'}]}
+18:39:39.643 [main] DEBUG GradingTest -   hand2 FLUSH {'cards':[{'suite':'SPADES','value':'QUEEN'},{'suite':'SPADES','value':'JACK'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'NINE'},{'suite':'SPADES','value':'EIGHT'}]}
+18:39:39.643 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.643 [main] DEBUG GradingTest -                      expected true
+18:39:39.643 [main] DEBUG GradingTest -                     PASS
+18:39:39.643 [main] DEBUG GradingTest - STRAIGHT_FLUSH :  FULL_HOUSE
+18:39:39.644 [main] DEBUG GradingTest - comparing STRAIGHT_FLUSH with FULL_HOUSE
+18:39:39.644 [main] DEBUG GradingTest -   hand1 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'SEVEN'},{'suite':'DIAMONDS','value':'SEVEN'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'HEARTS','value':'KING'},{'suite':'SPADES','value':'KING'}]}
+18:39:39.644 [main] DEBUG GradingTest -   hand2 FULL_HOUSE {'cards':[{'suite':'SPADES','value':'QUEEN'},{'suite':'SPADES','value':'JACK'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'NINE'},{'suite':'SPADES','value':'EIGHT'}]}
+18:39:39.644 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.644 [main] DEBUG GradingTest -                      expected true
+18:39:39.644 [main] DEBUG GradingTest -                     FAIL
+18:39:39.644 [main] DEBUG GradingTest - STRAIGHT_FLUSH :  FOUR_OF_A_KIND
+18:39:39.645 [main] DEBUG GradingTest - comparing STRAIGHT_FLUSH with FOUR_OF_A_KIND
+18:39:39.645 [main] DEBUG GradingTest -   hand1 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'FOUR'},{'suite':'DIAMONDS','value':'FOUR'},{'suite':'CLUBS','value':'FOUR'},{'suite':'HEARTS','value':'FOUR'},{'suite':'SPADES','value':'ACE'}]}
+18:39:39.645 [main] DEBUG GradingTest -   hand2 FOUR_OF_A_KIND {'cards':[{'suite':'SPADES','value':'QUEEN'},{'suite':'SPADES','value':'JACK'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'NINE'},{'suite':'SPADES','value':'EIGHT'}]}
+18:39:39.645 [main] DEBUG GradingTest -   is hand1 better than hand2? false
+18:39:39.645 [main] DEBUG GradingTest -                      expected true
+18:39:39.645 [main] DEBUG GradingTest -                     FAIL
+18:39:39.645 [main] DEBUG GradingTest - STRAIGHT_FLUSH :  STRAIGHT_FLUSH
+18:39:39.645 [main] DEBUG GradingTest - comparing STRAIGHT_FLUSH with STRAIGHT_FLUSH
+18:39:39.646 [main] DEBUG GradingTest -   hand1 STRAIGHT_FLUSH {'cards':[{'suite':'CLUBS','value':'TEN'},{'suite':'CLUBS','value':'NINE'},{'suite':'CLUBS','value':'EIGHT'},{'suite':'CLUBS','value':'SEVEN'},{'suite':'CLUBS','value':'SIX'}]}
+18:39:39.646 [main] DEBUG GradingTest -   hand2 STRAIGHT_FLUSH {'cards':[{'suite':'SPADES','value':'QUEEN'},{'suite':'SPADES','value':'JACK'},{'suite':'SPADES','value':'TEN'},{'suite':'SPADES','value':'NINE'},{'suite':'SPADES','value':'EIGHT'}]}
+18:39:39.646 [main] DEBUG GradingTest -   is hand1 better than hand2? true
+18:39:39.646 [main] DEBUG GradingTest -                      expected true
+18:39:39.646 [main] DEBUG GradingTest -                     PASS
+18:39:39.646 [main] DEBUG GradingTest - num tests 81
+18:39:39.646 [main] DEBUG GradingTest - passed 69
