@@ -32,17 +32,16 @@ public class Hand {
         for (int i = 0; i < 5; i++) {
             this.cards[i] = cards[i];
         }
-
-        Arrays.sort(this.cards, Collections.reverseOrder());
     }
 
     public void swapCard(int index, Card newCard) {
         this.cards[index] = newCard.duplicate();
-
-        Arrays.sort(this.cards, Collections.reverseOrder());
     }
 
     public boolean is_better_than(Hand h) {
+        Arrays.sort(this.cards, Collections.reverseOrder());
+        Arrays.sort(h.cards, Collections.reverseOrder());
+
         if (this.check_type().ordinal() == h.check_type().ordinal()) {
             ArrayList<Card> this_unique_cards = this.highest_unique_card();
             ArrayList<Card> h_unique_cards = h.highest_unique_card();
@@ -60,6 +59,9 @@ public class Hand {
     }
 
     public boolean is_equal(Hand h) {
+        Arrays.sort(this.cards, Collections.reverseOrder());
+        Arrays.sort(h.cards, Collections.reverseOrder());
+
         boolean is_equal = true;
 
         if (this.check_type().ordinal() == h.check_type().ordinal()) {
@@ -84,8 +86,8 @@ public class Hand {
         for (int i =0; i < 4; i++) {
             if (this.cards[i].compareTo(this.cards[i + 1]) != 0) {
                 unique_cards.add(this.cards[i]);
-                if (i == 4) {
-                    unique_cards.add(this.cards[5]);
+                if (i == 3) {
+                    unique_cards.add(this.cards[4]);
                 }
             }
         }
@@ -94,6 +96,8 @@ public class Hand {
     }
 
     public HandType check_type() {
+        Arrays.sort(this.cards, Collections.reverseOrder());
+
         HandType type = HandType.HIGH_CARD;
 
         boolean straight = true;
@@ -103,7 +107,7 @@ public class Hand {
         int kind_index = 0;
 
         for (int i = 0; i < 4; i++) {
-            if (this.cards[i].compareTo(this.cards[i + 1]) != -1) {
+            if (this.cards[i].compareTo(this.cards[i + 1]) != 1) {
                 straight = false;
             }
 
@@ -118,7 +122,7 @@ public class Hand {
             }
         }
 
-        if (straight && flush && (this.cards[4].value == Value.ACE)) {
+        if (straight && flush && (this.cards[0].value == Value.ACE)) {
             type = HandType.ROYAL_FLUSH;
         } else if (straight && flush) {
             type = HandType.STRAIGHT_FLUSH;
@@ -149,7 +153,7 @@ public class Hand {
 
     @Override
     public String toString() {
-        StringBuilder hand = new StringBuilder(this.check_type().toString() + "\n");
+        StringBuilder hand = new StringBuilder(this.check_type().toString() + " (" + this.check_type().ordinal() + ")\n");
 
         for (Card c : this.cards) {
             hand.append(c.toString() + "\n");
