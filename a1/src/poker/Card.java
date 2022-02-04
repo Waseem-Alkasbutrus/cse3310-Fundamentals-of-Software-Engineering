@@ -24,6 +24,10 @@ public class Card implements Comparable<Card> {
       return new Card(this.value, this.suite);
    }
 
+   public boolean compareSuiteTo(Card c) {
+      return this.suite == c.suite;
+   }
+
    @Override
    public String toString() {
       return this.value + " of " + this.suite;

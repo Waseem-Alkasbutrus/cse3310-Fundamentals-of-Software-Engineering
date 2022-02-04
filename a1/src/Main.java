@@ -32,7 +32,7 @@ public class Main {
       // turn it into json
       Gson gson = new Gson();
       String jsonString = gson.toJson(H1);
-      System.out.println(jsonString);
+      System.out.println("hand1:\n" + jsonString);
 
       // and back into a "hand"
       Hand H3 = new Hand();
@@ -42,17 +42,25 @@ public class Main {
       H3.swapCard(4, new Card(Value.FIVE, Suite.DIAMONDS));
 
       // show that it works
-      System.out.println(gson.toJson(H3));
+      System.out.println("\nhand3:\n" + gson.toJson(H3) + "\n");
 
       // show the comparison function
       Hand H2 = H1.duplicate();
 
-      if (H1.is_better_than(H2)) {
+      if (H1.is_equal(H2)) {
+         System.out.println("hand1 and hand2 are equal");
+      } else if (H1.is_better_than(H2)) {
          System.out.println("hand1 is better than hand2");
+      } else {
+         System.out.println("hand2 is better than hand1");
       }
 
-      if (H2.is_better_than(H1)) {
-         System.out.println("hand2 is better than hand1");
+      if (H1.is_equal(H3)) {
+         System.out.println("hand1 and hand3 are equal");
+      } else if (H1.is_better_than(H3)) {
+         System.out.println("hand1 is better than hand3");
+      } else {
+         System.out.println("hand3 is better than hand1");
       }
 
       System.out.println("End\n==================================");
