@@ -19,11 +19,18 @@ public class Main {
 
       // allocate space for 5 card references
       Card[] cards = new Card[5];
-      cards[0] = new Card(Value.FIVE, Suite.SPADES);
-      cards[1] = new Card(Value.FOUR, Suite.SPADES);
-      cards[2] = new Card(Value.THREE, Suite.SPADES);
-      cards[3] = new Card(Value.TWO, Suite.SPADES);
-      cards[4] = new Card(Value.ACE, Suite.SPADES);
+      cards[0] = new Card(Value.ACE, Suite.SPADES);
+      cards[1] = new Card(Value.FOUR, Suite.DIAMONDS);
+      cards[2] = new Card(Value.FOUR, Suite.SPADES);
+      cards[3] = new Card(Value.SEVEN, Suite.HEARTS);
+      cards[4] = new Card(Value.TWO, Suite.SPADES);
+
+      Card[] cards2 = new Card[5];
+      cards2[0] = new Card(Value.TEN, Suite.SPADES);
+      cards2[1] = new Card(Value.TEN, Suite.DIAMONDS);
+      cards2[2] = new Card(Value.FIVE, Suite.SPADES);
+      cards2[3] = new Card(Value.FOUR, Suite.HEARTS);
+      cards2[4] = new Card(Value.TWO, Suite.SPADES);
 
       // Demonstrate converting json in and out of a 'Hand'
       //
@@ -45,13 +52,17 @@ public class Main {
       System.out.println("\nhand3:\n" + gson.toJson(H3) + "\n");
 
       // show the comparison function
-      Hand H2 = H1.duplicate();
+      Hand H2 = new Hand(cards2);
+
+      System.out.println("\nH1: " + H1);
+      System.out.println("\nH2: " + H2);
+      System.out.println("\nH3: " + H3);
 
       if (H1.is_equal(H2)) {
          System.out.println("hand1 and hand2 are equal");
       } else if (H1.is_better_than(H2)) {
          System.out.println("hand1 is better than hand2");
-      } else {
+      } else if (H2.is_better_than(H1)) {
          System.out.println("hand2 is better than hand1");
       }
 
